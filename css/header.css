@@ -5,7 +5,7 @@
 }
 
 .header {
-    background-color: rgb(241, 241, 241);
+    background-color: #efeff5;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,39 +36,44 @@
     font-weight: bold;
 }
 
-.header__hidden-bar{ /*hidden bar 전체*/
-    /*display: none;*/
-    left: 0;
-    position: static;
-    color: #020202;
-    border-top: 0.5px solid rgb(212, 212, 235);
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.hidden-title{
-    width: 120px;
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 5px;
-    border-bottom: rgb(219, 216, 235) 0.5px solid;
-}
 .depth_text {
     padding-top: 10px;
     font-size: 12px;
 }
 
-.hidden {
-    display: flex;
-    justify-content: space-between;
-}
-
 .column-title {
+    height: 100%;
+    padding: 30px;
     margin-left: 50px;
 }
 
-.header__column:hover ~ .header__hidden-bar {
-    /*마우스 가져다 대면 보이게 함*/
-    display: revert;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+.mega-menu {
+    position: absolute;
+    width: 100%;
+    height: 210px;
+    background-color:  #efeff5;
+    float: left;
+    left: 0;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding: 40px 100px;
+    margin-top: 26px;
+    border-top: 0.5px solid rgb(255, 255, 255);
+    opacity: 0;
+}
+
+.hidden-column__title {
+    font-size: 16px;
+    font-weight: bold;
+    width: 130px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgb(236, 236, 236);
+}
+
+.column-title:hover ~ .mega-menu {
+    opacity: 1;
+}
+
+.mega-menu:hover .mega-menu{
 }
