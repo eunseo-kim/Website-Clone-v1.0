@@ -36,18 +36,39 @@
     font-weight: bold;
 }
 
+.header__hidden-bar{ /*hidden bar 전체*/
+    /*display: none;*/
+    left: 0;
+    position: static;
+    color: #020202;
+    border-top: 0.5px solid rgb(212, 212, 235);
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hidden-title{
+    width: 120px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: rgb(219, 216, 235) 0.5px solid;
+}
+.depth_text {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
 .hidden {
-    /*display: none*/
-    position: absolute;
-    background-color: rgb(0, 0, 190);
-    color: white;
-    top: 83px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .column-title {
     margin-left: 50px;
 }
 
-.header__column:hover .hidden {
-    display: block;
+.header__column:hover ~ .header__hidden-bar {
+    /*마우스 가져다 대면 보이게 함*/
+    display: revert;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 }
