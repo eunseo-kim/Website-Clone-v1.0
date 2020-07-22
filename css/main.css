@@ -1,0 +1,7 @@
+.main__wallpaper {
+    width: 100px;
+}
+
+.slide-2, .slide-3, .slide-4 {
+    display: none;
+}
