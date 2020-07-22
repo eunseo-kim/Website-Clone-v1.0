@@ -33,11 +33,12 @@
     text-transform: uppercase;
     font-size: 11px;
     margin-left: 8px;
-    font-weight: bold;
 }
 
 .depth_text {
-    padding-top: 10px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 5px 0px;
     font-size: 12px;
 }
 
@@ -68,11 +69,30 @@
     font-weight: bold;
     width: 130px;
     padding-bottom: 10px;
+    margin-bottom: 5px;
     border-bottom: 0.5px solid rgb(178, 182, 224);
 }
 
-.header__column:hover .mega-menu {
-    visibility: visible;
-    display: flex;
+@keyframes showHiddenBar {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
+.header__column:hover .mega-menu{
+    visibility: visible;
+    display: flex;
+    animation: showHiddenBar 0.5s ease-in-out;
+    }
+
+.column-title:hover {
+    color: rgb(0, 0, 190);
+}
+
+.depth_text:hover {
+    background-color: #f7f7f7;
+    color: rgb(0, 0, 190);
+}
