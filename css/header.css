@@ -44,7 +44,7 @@
 .column-title {
     height: 100%;
     padding: 30px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .mega-menu {
@@ -60,7 +60,7 @@
     padding: 40px 100px;
     margin-top: 26px;
     border-top: 0.5px solid rgb(255, 255, 255);
-    opacity: 0;
+    display: none;
 }
 
 .hidden-column__title {
@@ -68,12 +68,11 @@
     font-weight: bold;
     width: 130px;
     padding-bottom: 10px;
-    border-bottom: 0.5px solid rgb(236, 236, 236);
+    border-bottom: 0.5px solid rgb(178, 182, 224);
 }
 
-.column-title:hover ~ .mega-menu {
-    opacity: 1;
+.header__column:hover .mega-menu {
+    visibility: visible;
+    display: flex;
 }
 
-.mega-menu:hover .mega-menu{
-}
