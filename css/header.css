@@ -5,13 +5,14 @@
 }
 
 .header {
+    z-index: 9999;
     background-color: #efeff5;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px 40px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
 }
@@ -20,6 +21,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@keyframes oppositeAnimation {
+    from{
+        background-color: #efeff5;
+    }
+    to{
+        background-color: rgb(0, 0, 190);
+    }
+}
+
+.header__search i:hover {
+    animation: oppositeAnimation 0.5s ease-in-out;
+    background-color: rgb(0, 0, 190);
+    color: rgb(255, 255, 255);
+}
+
+.header__search i{
+    padding: 10px;
+    background-color: #efeff5;
+    border: 0.7px solid #020202;
 }
 
 .logo__main {   /*SAMSUNG*/
@@ -42,10 +64,10 @@
     font-size: 12px;
 }
 
-.column-title {
-    height: 100%;
+.column-title{
     padding: 30px;
-    margin-left: 30px;
+    height: 100%;
+    margin-left: 50px;
 }
 
 .mega-menu {
@@ -58,8 +80,8 @@
     display: flex;
     align-items: top;
     justify-content: space-between;
-    padding: 40px 100px;
-    margin-top: 26px;
+    padding: 40px 140px;
+    margin-top: 24px;
     border-top: 0.5px solid rgb(255, 255, 255);
     display: none;
 }
@@ -74,21 +96,22 @@
 }
 
 @keyframes showHiddenBar {
-    from{
+    0%{
         opacity: 0;
     }
-    to{
+    60%{
         opacity: 1;
     }
+ 
 }
 
-.header__column:hover .mega-menu{
+.header ul:hover .mega-menu{
     visibility: visible;
     display: flex;
     animation: showHiddenBar 0.5s ease-in-out;
     }
 
-.column-title:hover {
+.header__column .title:hover {
     color: rgb(0, 0, 190);
 }
 
