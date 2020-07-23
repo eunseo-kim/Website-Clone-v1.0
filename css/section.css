@@ -1,0 +1,38 @@
+.section {
+    background-color: rgba(1, 0, 14, 0.76);
+    color: #f7f7f7;
+    padding: 50px 0px;
+    margin-top: 80px;
+}
+
+.section .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+    padding-bottom: 15px;
+    align-items: baseline;
+    font-size: 18px;
+    border-bottom: 0.3px solid rgb(150, 150, 150);
+    font-weight: lighter;
+}
+
+.section .info i {
+    font-size: 30px;
+}
+
+.section .addinfo {
+    margin: 15px 30px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: lighter;
+}
+
+.info__left span{
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.info__left span:hover {
+    font-weight: 400;
+    color: white;
+}
