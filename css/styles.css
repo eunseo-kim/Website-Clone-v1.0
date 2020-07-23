@@ -2,7 +2,8 @@
 @import "main.css";
 @import "header.css";
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;600;700&display=swap');
+@import "nav.css";
 
 body {
     background-color: white;

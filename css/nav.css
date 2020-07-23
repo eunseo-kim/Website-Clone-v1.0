@@ -1,0 +1,78 @@
+.nav__list{
+    display: inline-block;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav__title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.list {
+    background-color: #e7e7ec;
+    margin: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    width: 250px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #020202;
+    line-height: 22px;
+    
+}
+
+.list i {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+@keyframes lineAnimation1 {
+    /*왼쪽에서 오른쪽*/
+    0%{
+        transition: translateX(-100%);
+    }
+    100%{
+        transition: translateX(100%);
+    }
+}
+
+@keyframes lineAnimation2 {
+    /*아래에서 위*/
+    0%{
+        transition: translateY(-100%);
+    }
+    100%{
+        transition: translateY(100%);
+    }
+}
+
+@keyframes lineAnimation3 {
+    /*오른쪽에서 왼쪽*/
+    0%{
+        transition: translateX(100%);
+    }
+    100%{
+        transition: translateX(-100%);
+    }
+}
+
+@keyframes lineAnimation4 {
+    /*위에서 아래*/
+    0%{
+        transition: translateY(100%);
+    }
+    100%{
+        transition: translateY(-100%);
+    }
+}
+
+.list:hover {
+    background-color: #2e2e38;
+    color: #ffffff;
+}
